@@ -59,3 +59,70 @@ In this setup:
 ---
 
 > This structure makes Apache suitable for hosting static websites, dynamic applications, and acting as a reverse proxy for backend services.
+
+---
+
+## Nginx
+
+**Nginx** (pronounced *engine-x*) is a high-performance, open-source web server and reverse proxy server. It is well known for its **speed, scalability, and ability to handle high traffic efficiently**.
+
+### 1. What Does Nginx Do?
+
+Nginx handles HTTP/HTTPS requests and serves:
+
+* Static content (HTML, CSS, JavaScript, images)
+* API requests (via reverse proxy to backend services)
+* Load-balanced traffic across multiple servers
+
+> **In simple terms:** Nginx is optimized to serve content very fast and manage a large number of simultaneous users.
+
+---
+
+### 2. How Nginx Works (Simple Flow)
+
+1. A user enters `https://example.com` in their browser.
+2. The request reaches the server on port **80 (HTTP)** or **443 (HTTPS)**.
+3. Nginx processes the request:
+
+   * Quickly serves static files, or
+   * Forwards the request to a backend service (Node.js, Python, etc.)
+   * Returns the response to the browser
+
+---
+
+### 3. Nginx in a Real Server Setup
+
+A common Nginx-based architecture looks like this:
+
+```
+Browser
+   ↓
+Nginx Server
+   ↓
+Backend Application (Node.js / Python / PHP)
+   ↓
+Database (MySQL / MongoDB)
+```
+
+In this setup:
+
+* Nginx acts as a **reverse proxy** and **load balancer**
+* Backend applications focus only on business logic
+* The system efficiently handles high traffic
+
+---
+
+### 4. Apache vs Nginx (Quick Comparison)
+
+| Feature             | Apache                 | Nginx                     |
+| ------------------- | ---------------------- | ------------------------- |
+| Architecture        | Process / Thread-based | Event-driven              |
+| Performance         | Good                   | Excellent (high traffic)  |
+| Static files        | Good                   | Very fast                 |
+| Reverse proxy       | Supported              | Excellent                 |
+| `.htaccess` support | Yes                    | No                        |
+| Configuration       | Easier for beginners   | More performance-oriented |
+
+---
+
+> **Summary:** Apache is flexible and beginner-friendly, while Nginx excels in performance and scalability. Many production systems use **Nginx or Apache in front of backend services like Node.js**.
