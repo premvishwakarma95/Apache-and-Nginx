@@ -1,6 +1,6 @@
 # Apache-and-Nginx
 ---
-## Apache
+## Apache:-
 Apache (Apache HTTP Server) is one of the most widely used web servers in the world. It is responsible for serving websites and web applications to users over the internet.
 
 ### 1 What does Apache do?
