@@ -18,3 +18,13 @@ In simple words: 👉 Apache delivers your website when someone opens a URL.
 - - Finds the requested file or route
 - - Applies security & configuration rules
 - - Sends response back to the browser
+
+### 3 Apache in a real server setup.
+Browser
+   ↓
+Apache Server
+   ↓
+Backend (PHP / Node.js / Python)
+   ↓
+Database (MySQL / MongoDB)
+
