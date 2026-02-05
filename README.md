@@ -1,4 +1,4 @@
-# Apache and Nginx
+# Apache and Nginx -> Both are same but built on different tech, Nginx is faster than Apache.
 
 This document provides a concise and beginner-friendly overview of **Apache HTTP Server** (and can be extended to Nginx) for use in project documentation or server architecture explanations.
 
