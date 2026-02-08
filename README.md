@@ -4,7 +4,7 @@ This document provides a concise and beginner-friendly overview of **Apache HTTP
 
 ---
 
-## Apache
+## Apache - httpd
 
 **Apache HTTP Server** is one of the most widely used open-source web servers in the world. Its primary role is to **serve websites and web applications to users over the internet**.
 
